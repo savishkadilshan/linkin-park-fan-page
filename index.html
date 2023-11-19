@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/@media.css">
+    <title>Linkin Park</title>
+</head>
+<body>
+    <section class="hero-section">
+        <nav id="nav">
+            <img src="../Linkin Park/img/logos/header-logo.png" alt="main-logo">
+            <div class="nav-links" id="nav-links">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">Members</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Celebrations</a></li>
+                    <li><a href="#">Albums</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">For Fans</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="hero-content">
+            <img src="../Linkin Park/img/logos/linkin-park-hero-section.png" alt="linkin-park-hero-section">
+            <p class="hero-content-desktop-text">Linkin Park was an American rock band that formed in 1996. <br> They were known for their unique fusion of rock, metal, and hip-hop, and their powerful and emotional lyrics. <br> The band achieved worldwide success with albums such as "Hybrid Theory" and "Meteora," and were known for hits like "In the End," "Numb," and "Crawling."</p>
+            <p class="hero-content-mobile-text">Linkin Park was an American rock band that formed in 1996. <br> They were known for their unique fusion of rock, metal, and hip-hop, and their powerful and emotional lyrics.</p>
+        </div>
+    </section>
+	
+	<section class="quote-section">
+		<div class="quote">
+			<p>“I tried so hard, and got so far, but in the end, it doesn’t even matter.<br>I had to fall to lose it all, but in the end, it doesn’t even matter.” <br>– Linkin Park</p>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="footer-sec-one">
+			<img src="../Linkin Park/img/logos/linkin-park-footer-logo.png" alt="linkin-park-logo">
+				<div class="footer-nav-links">
+					<ul>
+						<li><a href="#">Members</a></li>
+						<li><a href="#">Events</a></li>
+						<li><a href="#">Celebrations</a></li>
+						<li><a href="#">Albums</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">For Fans</a></li>
+					</ul>
+				</div>
+		</div>
+		<div class="footer-sec-two">
+			<p>Webpage Design by Savishka Dilshan</p>
+			<p>&copy 2023 TheSavishka inc. All Right Recieved.</p>
+		</div>
+	</footer>
+	
+	
+	
+<!------- Javascript for toggle menu ------->
+	<script>
+		var navLinks = document.getElementById("nav-links");
+		var nav = document.getElementById("nav");
+		
+		function hideMenu(){
+			navLinks.style.top = "-1000px";
+			nav.style.opacity = "80%";
+		}
+		
+		function showMenu(){
+			navLinks.style.top = "0";
+			nav.style.opacity = "100%";
+		}
+	</script>
+</body>
+</html>
